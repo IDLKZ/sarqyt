@@ -108,23 +108,21 @@
             <h2>Наши <em>Партнеры</em></h2>
           </div>
         </div>
-        <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
-             data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-          <div class="owl-carousel owl-theme">
-            <div class="item service-item">
-              <img src="assets/images/magnum.png" alt="Magnum Logo">
-            </div>
-            <div class="item service-item">
-              <img src="assets/images/gramad.png" alt="Gramad Logo">
-            </div>
-            <div class="item service-item">
-              <img src="assets/images/metro.png" alt="Metro Logo">
-            </div>
-            <div class="item service-item">
-              <img src="assets/images/firkan.png" alt="Firkan Logo">
-            </div>
-          </div>
-        </div>
+        <hooper :itemsToShow="3" :infiniteScroll="true" :autoPlay="true" :playSpeed="3000">
+          <slide>
+            <img src="assets/images/magnum.png" alt="Magnum Logo">
+          </slide>
+          <slide>
+            <img src="assets/images/gramad.png" alt="Magnum Logo">
+          </slide>
+          <slide>
+            <img src="assets/images/metro.png" alt="Magnum Logo">
+          </slide>
+          <slide>
+            <img src="assets/images/firkan.png" alt="Magnum Logo">
+          </slide>
+        </hooper>
+
       </div>
     </div>
   </section>
@@ -214,9 +212,16 @@
 <script>
 import VideoPlayer from 'nuxt-video-player'
 require('nuxt-video-player/src/assets/css/main.css')
+import { Hooper, Slide } from 'hooper';
+import 'hooper/dist/hooper.css';
 export default {
+  data() {
+    return {
+
+    }
+  },
   components: {
-    VideoPlayer
+    VideoPlayer, Hooper, Slide
   }
 }
 </script>

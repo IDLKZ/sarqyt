@@ -1080,7 +1080,7 @@ footer .right-content {
   margin-top: 0px;
   margin-bottom: 30px;
   font-size: 42px;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -1287,4 +1287,10 @@ preloader
   border: 1px solid #000000;
   color: white;
   border-radius: 10px;
+}
+
+.hooper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
