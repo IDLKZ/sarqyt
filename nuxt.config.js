@@ -18,15 +18,15 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {src: '/assets/js/jquery-2.1.0.min.js'},
-      {src: '/assets/js/popper.js'},
-      {src: '/assets/js/bootstrap.min.js'},
-      {src: '/assets/js/owl-carousel.js'},
-      {src: '/assets/js/scrollreveal.min.js'},
-      {src: '/assets/js/waypoints.min.js'},
-      {src: '/assets/js/jquery.counterup.min.js'},
-      {src: '/assets/js/imgfix.min.js'},
-      {src: '/assets/js/custom.js'},
+      {src: '/assets/js/jquery-2.1.0.min.js', defer: true},
+      {src: '/assets/js/popper.js', defer: true},
+      {src: '/assets/js/bootstrap.min.js', defer: true},
+      {src: '/assets/js/owl-carousel.js', defer: true},
+      {src: '/assets/js/scrollreveal.min.js', defer: true},
+      {src: '/assets/js/waypoints.min.js', defer: true},
+      {src: '/assets/js/jquery.counterup.min.js', defer: true},
+      {src: '/assets/js/imgfix.min.js', defer: true},
+      {src: '/assets/js/custom.js', defer: true},
     ]
   },
 

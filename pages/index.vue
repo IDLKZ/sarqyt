@@ -8,7 +8,7 @@
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="/" class="logo">
-              <img src="/assets/images/logo.png" alt="Logo">
+              <img src="/assets/images/sarqyt-logo.png" alt="Logo">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -108,7 +108,7 @@
             <h2>Наши <em>Партнеры</em></h2>
           </div>
         </div>
-        <hooper :itemsToShow="3" :infiniteScroll="true" :autoPlay="true" :playSpeed="3000">
+        <hooper :itemsToShow="item" :infiniteScroll="true" :autoPlay="true" :playSpeed="3000">
           <slide>
             <img src="assets/images/magnum.png" alt="Magnum Logo">
           </slide>
@@ -189,9 +189,9 @@
             <h2>Мы предлагаем самые горячие предложения в нашем <em>приложении</em> </h2>
             <ul class="social">
               <li><a href="mailto:sarqytapp@gmail.com"><i class="fa fa-google"></i></a></li>
-              <li><a href="mailto:sarqytapp@gmail.com"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="mailto:sarqytapp@gmail.com"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="mailto:sarqytapp@gmail.com"><i class="fa fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://instagram.com/sarqytapp"><i class="fa fa-instagram"></i></a></li>
+<!--              <li><a href="mailto:sarqytapp@gmail.com"><i class="fa fa-facebook"></i></a></li>-->
+<!--              <li><a href="mailto:sarqytapp@gmail.com"><i class="fa fa-twitter"></i></a></li>-->
             </ul>
           </div>
         </div>
@@ -217,11 +217,14 @@ import 'hooper/dist/hooper.css';
 export default {
   data() {
     return {
-
+      item: screen.width < 600 ? 1 : 3
     }
   },
   components: {
     VideoPlayer, Hooper, Slide
+  },
+  mounted() {
+    console.log(this.item)
   }
 }
 </script>
