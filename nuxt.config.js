@@ -1,7 +1,7 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'sarqyt',
@@ -18,15 +18,15 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {src: '/assets/js/jquery-2.1.0.min.js', async:true},
-      {src: '/assets/js/popper.js', async:true},
-      {src: '/assets/js/bootstrap.min.js', async:true},
-      {src: '/assets/js/owl-carousel.js', async:true},
-      {src: '/assets/js/scrollreveal.min.js', async:true},
-      {src: '/assets/js/waypoints.min.js', async:true},
-      {src: '/assets/js/jquery.counterup.min.js', async:true},
-      {src: '/assets/js/imgfix.min.js', async:true},
-      {src: '/assets/js/custom.js', async:true},
+      {src: '/assets/js/jquery-2.1.0.min.js'},
+      {src: '/assets/js/popper.js'},
+      {src: '/assets/js/bootstrap.min.js'},
+      {src: '/assets/js/owl-carousel.js'},
+      {src: '/assets/js/scrollreveal.min.js'},
+      {src: '/assets/js/waypoints.min.js'},
+      {src: '/assets/js/jquery.counterup.min.js'},
+      {src: '/assets/js/imgfix.min.js'},
+      {src: '/assets/js/custom.js'},
     ]
   },
 
