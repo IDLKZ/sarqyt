@@ -18,24 +18,24 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {src: '/assets/js/jquery-2.1.0.min.js', defer: true},
-      {src: '/assets/js/popper.js', defer: true},
-      {src: '/assets/js/bootstrap.min.js', defer: true},
-      {src: '/assets/js/owl-carousel.js', defer: true},
-      {src: '/assets/js/scrollreveal.min.js', defer: true},
-      {src: '/assets/js/waypoints.min.js', defer: true},
-      {src: '/assets/js/jquery.counterup.min.js', defer: true},
-      {src: '/assets/js/imgfix.min.js', defer: true},
-      {src: '/assets/js/custom.js', defer: true},
+      {src: '/js/jquery-2.1.0.min.js', defer: true},
+      {src: '/js/popper.js', defer: true},
+      {src: '/js/bootstrap.min.js', defer: true},
+      {src: '/js/owl-carousel.js', defer: true},
+      {src: '/js/scrollreveal.min.js', defer: true},
+      {src: '/js/waypoints.min.js', defer: true},
+      {src: '/js/jquery.counterup.min.js', defer: true},
+      {src: '/js/imgfix.min.js', defer: true},
+      {src: '/js/custom.js', defer: true},
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "static/assets/css/bootstrap.min.css",
-    "static/assets/css/font-awesome.css",
-    "static/assets/css/templatemo-lava.css",
-    "static/assets/css/owl-carousel.css"
+    "static/css/bootstrap.min.css",
+    "static/css/font-awesome.css",
+    "static/css/templatemo-lava.css",
+    "static/css/owl-carousel.css"
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

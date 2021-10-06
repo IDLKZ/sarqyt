@@ -72,7 +72,7 @@
 
     <div class="promo-clip">
       <div class="container my-5">
-        <video-player :allowFullscreen="false" src="https://www.youtube.com/watch?v=n2M6M_zZDIo"/>
+        <video-player :allowFullscreen="false" src="https://www.youtube.com/watch?v=BLe33jsN-M8"/>
       </div>
     </div>
 
@@ -82,30 +82,30 @@
         <div class="row">
           <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-            <img src="assets/images/left-image_1.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            <img src="/images/left-image_1.png" class="rounded img-fluid d-block mx-auto" alt="App">
           </div>
           <div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
             <ul class="ul">
               <li class="d-flex justify-content-start mb-3" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                <img src="assets/images/about-icon-01.png" alt="">
+                <img src="/images/about-icon-01.png" alt="">
                 <div class="text">
                   <h4>Находишь товар в приложении</h4>
                 </div>
               </li>
               <li class="d-flex justify-content-start mb-3" data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                <img src="assets/images/about-icon-02.png" alt="">
+                <img src="/images/about-icon-02.png" alt="">
                 <div class="text">
                   <h4>Покупаешь его в определенное время</h4>
                 </div>
               </li>
               <li class="d-flex justify-content-start mb-3" data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                <img src="assets/images/about-icon-03.png" alt="">
+                <img src="/images/about-icon-03.png" alt="">
                 <div class="text">
                   <h4>Сканируешь QR код на чеке</h4>
                 </div>
               </li>
               <li class="d-flex justify-content-start mb-3" data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                <img src="assets/images/about-icon-04.png" alt="">
+                <img src="/images/about-icon-04.png" alt="">
                 <div class="text">
                   <h4>Получаешь бонусы</h4>
                 </div>
@@ -130,16 +130,16 @@
           </div>
           <hooper :itemsToShow="item" :infiniteScroll="true" :autoPlay="true" :playSpeed="3000">
             <slide>
-              <img src="assets/images/magnum.png" alt="Magnum Logo">
+              <img src="/images/magnum.png" alt="Magnum Logo">
             </slide>
             <slide>
-              <img src="assets/images/gramad.png" alt="Magnum Logo">
+              <img src="/images/gramad.png" alt="Magnum Logo">
             </slide>
             <slide>
-              <img src="assets/images/metro.png" alt="Magnum Logo">
+              <img src="/images/metro.png" alt="Magnum Logo">
             </slide>
             <slide>
-              <img src="assets/images/firkan.png" alt="Magnum Logo">
+              <img src="/images/firkan.png" alt="Magnum Logo">
             </slide>
           </hooper>
 
@@ -207,7 +207,7 @@
                       </a>
                       <a href="https://play.google.com/store/apps/details?id=com.friz.sarqyt_update">
 <!--                        <img class="mb-3" src="/assets/images/google_play.png" alt="" width="195" height="56">-->
-                        <img class="mb-3" src="/assets/images/google_play2.png" alt="Google Play" width="195" height="56">
+                        <img class="mb-3" src="/images/google_play2.png" alt="Google Play" width="195" height="56">
                       </a>
                     </div>
                   </div>
