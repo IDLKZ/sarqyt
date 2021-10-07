@@ -71,8 +71,16 @@
     <!-- ***** Welcome Area End ***** -->
 
     <div class="promo-clip">
-      <div class="container my-5">
-        <video-player :allowFullscreen="false" src="https://www.youtube.com/watch?v=BLe33jsN-M8"/>
+      <div class="container my-2">
+<!--        <video-player :allowFullscreen="false" src="https://www.youtube.com/watch?v=BLe33jsN-M8"/>-->
+        <section class="smart_tv">
+          <div class="player">
+            <img src="https://cdn.pixabay.com/photo/2018/12/22/03/27/smart-tv-3889141_1280.png" alt="">
+            <video controls muted autoplay loop playsinline id="videoID">
+              <source src="/promo-clip.mp4" type="video/mp4">
+            </video>
+          </div>
+        </section>
       </div>
     </div>
 
@@ -82,7 +90,7 @@
         <div class="row">
           <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-            <img src="/images/left-image_1.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            <img src="/images/left-image_3.png" class="rounded img-fluid d-block mx-auto" alt="App">
           </div>
           <div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
             <ul class="ul">
@@ -124,23 +132,23 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <div class="center-heading">
+            <div class="center-heading mb-0">
               <h2>Наши <em>Партнеры</em></h2>
             </div>
           </div>
-          <hooper :itemsToShow="item" :infiniteScroll="true" :autoPlay="true" :playSpeed="3000">
+          <hooper :itemsToShow="item" :autoPlay="true" :playSpeed="3000">
             <slide>
-              <img src="/images/magnum.png" alt="Magnum Logo">
+              <img src="/images/magnum1.png" alt="Magnum Logo">
             </slide>
-            <slide>
-              <img src="/images/gramad.png" alt="Magnum Logo">
-            </slide>
-            <slide>
-              <img src="/images/metro.png" alt="Magnum Logo">
-            </slide>
-            <slide>
-              <img src="/images/firkan.png" alt="Magnum Logo">
-            </slide>
+<!--            <slide>-->
+<!--              <img src="/images/gramad.png" alt="Magnum Logo">-->
+<!--            </slide>-->
+<!--            <slide>-->
+<!--              <img src="/images/metro.png" alt="Magnum Logo">-->
+<!--            </slide>-->
+<!--            <slide>-->
+<!--              <img src="/images/firkan.png" alt="Magnum Logo">-->
+<!--            </slide>-->
           </hooper>
 
         </div>
@@ -246,14 +254,67 @@ import 'hooper/dist/hooper.css';
 export default {
   data() {
     return {
-      item: screen.width < 800 ? 1 : 3
+      // item: screen.width < 800 ? 1 : 3
+      item: 1
     }
   },
   components: {
-    VideoPlayer, Hooper, Slide
+    Hooper, Slide
+  },
+  methods: {
+    toggleMute() {
+      var video = document.getElementById("videoID");
+      video.muted = false
+      video.play();
+    }
   },
   mounted() {
-    // console.log(this.item)
+    this.toggleMute()
   }
 }
 </script>
+
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.player > img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.smart_tv {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.player {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.player video {
+  position: absolute;
+  width: 92%;
+  height: 82.1%;
+  top: 2.4%;
+  left: 1.8%;
+  background: #000;
+}
+
+@media only screen and (max-width: 450px) {
+  .smart_tv {
+    height: 60vh;
+  }
+}
+
+</style>
